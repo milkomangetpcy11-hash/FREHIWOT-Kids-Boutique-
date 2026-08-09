@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FREHIWOT Kids Boutique</title>
+
+<meta
+name=“description”
+content=“FREHIWOT Kids Boutique — stylish and comfortable clothing for little ones.”
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">
+    ✨ Welcome to FREHIWOT Kids Boutique ✨
+  </div>
+  <header class="navbar">
+<a href="#home" class="logo">
+  FREHIWOT <span>♡</span>
+</a>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#collections">Collections</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+</nav>
+<a href="#collections" class="nav-button">
+  Shop Collections
+</a>
+  </header>
+  <main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">
+      FREHIWOT KIDS BOUTIQUE
+    </p>
+    <h1>
+      Little styles.<br>
+      <em>Big smiles.</em>
+    </h1>
+    <p class="hero-text">
+      Discover beautiful, comfortable and stylish clothing
+      for your little ones. Carefully selected for every
+      personality and every special moment.
+    </p>
+    <a href="#collections" class="primary-button">
+      Explore Collections →
+    </a>
+  </div>
+  <div class="hero-illustration">
+    <div class="sparkle sparkle-one">✦</div>
+    <div class="sparkle sparkle-two">✧</div>
+    <div class="hero-emoji">
+      🧸
+    </div>
+    <div class="hero-cloud cloud-one">
+      ☁️
+    </div>
+    <div class="hero-cloud cloud-two">
+      ☁️
+    </div>
+    <p>
+      Made for little ones ♡
+    </p>
+  </div>
+</section>
+<!-- WELCOME -->
+<section class="welcome">
+  <p class="eyebrow">
+    WELCOME
+  </p>
+  <h2>
+    Everything little ones love.
+  </h2>
+  <p>
+    From everyday essentials to special outfits,
+    FREHIWOT Kids Boutique brings together adorable
+    styles for girls and boys.
+  </p>
+</section>
+<!-- COLLECTIONS -->
+<section class="collections-section" id="collections">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">
+        SHOP BY COLLECTION
+      </p>
+      <h2>
+        Our Collections
+      </h2>
+    </div>
+    <p>
+      Browse our collections and discover something
+      special for your little one.
+    </p>
+  </div>
+  <div class="collections-grid">
+    <!-- T-SHIRTS -->
+    <article class="collection-card card-pink">
+      <div class="collection-icon">
+        👕
+      </div>
+      <span class="collection-label">
+        EVERYDAY STYLE
+      </span>
+      <h3>
+        Kids' T-Shirts
+      </h3>
+      <p class="price-range">
+        700 – 1,000 ETB
+      </p>
+      <p class="collection-description">
+        Comfortable and fun T-shirts for everyday adventures.
+      </p>
+      <button
+        class="collection-button"
+        onclick="showCollection('Kids’ T-Shirts')">
+        View Collection →
+      </button>
+    </article>
+    <!-- TROUSERS -->
+    <article class="collection-card card-blue">
+      <div class="collection-icon">
+        👖
+      </div>
+      <span class="collection-label">
+        COMFY & COOL
+      </span>
+      <h3>
+        Trousers
+      </h3>
+      <p class="price-range">
+        2,500 – 4,000 ETB
+      </p>
+      <p class="collection-description">
+        Stylish trousers for both girls and boys.
+      </p>
+      <button
+        class="collection-button"
+        onclick="showCollection('Trousers')">
+        View Collection →
+      </button>
+    </article>
+    <!-- SHOES -->
+    <article class="collection-card card-yellow">
+      <div class="collection-icon">
+        👟
+      </div>
+      <span class="collection-label">
+        LITTLE STEPS
+      </span>
+      <h3>
+        Shoes
+      </h3>
+      <p class="price-range">
+        3,000 – 5,000 ETB
+      </p>
+      <p class="collection-description">
+        Cute and comfortable shoes for growing feet.
+      </p>
+      <button
+        class="collection-button"
+        onclick="showCollection('Shoes')">
+        View Collection →
+      </button>
+    </article>
+    <!-- DRESSES -->
+    <article class="collection-card card-lavender">
+      <div class="collection-icon">
+        👗
+      </div>
+      <span class="collection-label">
+        SPECIAL MOMENTS
+      </span>
+      <h3>
+        Dresses
+      </h3>
+      <p class="price-range">
+        4,000 – 6,000 ETB
+      </p>
+      <p class="collection-description">
+        Beautiful dresses for birthdays, celebrations and more.
+      </p>
+      <button
+        class="collection-button"
+        onclick="showCollection('Dresses')">
+        View Collection →
+      </button>
+    </article>
+    <!-- CARDIGANS -->
+    <article class="collection-card card-green">
+      <div class="collection-icon">
+        🧥
+      </div>
+      <span class="collection-label">
+        COZY DAYS
+      </span>
+      <h3>
+        Cardigans
+      </h3>
+      <p class="price-range">
+        3,500 – 4,500 ETB
+      </p>
+      <p class="collection-description">
+        Cozy button-up layers for cooler days.
+      </p>
+      <button
+        class="collection-button"
+        onclick="showCollection('Cardigans')">
+        View Collection →
+      </button>
+    </article>
+  </div>
+</section>
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-illustration">
+    <span>
+      🌈
+    </span>
+    <div>
+      🧸
+    </div>
+    <small>
+      Happy little moments ♡
+    </small>
+  </div>
+  <div class="about-content">
+    <p class="eyebrow">
+      ABOUT FREHIWOT
+    </p>
+    <h2>
+      Made for childhood.
+    </h2>
+    <p>
+      FREHIWOT Kids Boutique is a cheerful destination
+      for stylish and comfortable children's clothing.
+    </p>
+    <p>
+      We believe kids' fashion should be fun, comfortable
+      and full of personality. Our collections are selected
+      with little ones and their families in mind.
+    </p>
+    <a href="#contact" class="secondary-button">
+      Get in Touch
+    </a>
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-content">
+    <p class="eyebrow">
+      CONTACT US
+    </p>
+    <h2>
+      Let's find something<br>
+      <em>special.</em>
+    </h2>
+    <p>
+      Have a question about a collection or want to
+      know more about a specific item? We'd love to hear
+      from you.
+    </p>
+    <div class="phone-list">
+      <a
+        href="tel:+251922843536"
+        class="phone-card">
+        <span>📞</span>
+        <div>
+          <small>
+            CALL US
+          </small>
+          <strong>
+            +251 922 84 35 36
+          </strong>
+        </div>
+      </a>
+      <a
+        href="tel:+251913266281"
+        class="phone-card">
+        <span>📞</span>
+        <div>
+          <small>
+            CALL US
+          </small>
+          <strong>
+            +251 913 26 62 81
+          </strong>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+  </main>
+  <!-- FOOTER -->
+  <footer>
+<div class="footer-logo">
+  FREHIWOT <span>♡</span>
+</div>
+<p>
+  Kids Boutique • Made with love for little ones.
+</p>
+<p>
+  © 2026 FREHIWOT Kids Boutique
+</p>
+  </footer>
+  <!-- COLLECTION POPUP -->
+  <div
+    class="message-box"
+    id="message-box">
+<button
+  class="close-button"
+  onclick="closeCollection()">
+  ×
+</button>
+<div class="message-icon">
+  ✨
+</div>
+<h3 id="message-title">
+  Collection
+</h3>
+<p>
+  We're preparing the individual products and
+  photos for this collection. Check back soon!
+</p>
+<button
+  onclick="closeCollection()"
+  class="primary-button">
+  Got it
+</button>
+  </div>
+  <div
+    class="overlay"
+    id="overlay"
+    onclick="closeCollection()">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
