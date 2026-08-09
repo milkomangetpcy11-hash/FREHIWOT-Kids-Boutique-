@@ -1,18 +1,48 @@
 function showCollection(collectionName) {
-document.getElementById(“message-title”).textContent =
-collectionName;
+const title = document.getElementById(“message-title”);
+const popup = document.getElementById(“message-box”);
+const overlay = document.getElementById(“overlay”);
 
-document.getElementById(“message-box”)
-.classList.add(“open”);
+if (title) {
+title.textContent = collectionName;
+}
 
-document.getElementById(“overlay”)
-.classList.add(“open”);
+if (popup) {
+popup.classList.add(“open”);
+}
+
+if (overlay) {
+overlay.classList.add(“open”);
+}
+
+document.body.style.overflow = “hidden”;
 }
 
 function closeCollection() {
-document.getElementById(“message-box”)
-.classList.remove(“open”);
+const popup = document.getElementById(“message-box”);
+const overlay = document.getElementById(“overlay”);
 
-document.getElementById(“overlay”)
-.classList.remove(“open”);
+if (popup) {
+popup.classList.remove(“open”);
 }
+
+if (overlay) {
+overlay.classList.remove(“open”);
+}
+
+document.body.style.overflow = “”;
+}
+
+/* Close popup with the Escape key */
+
+document.addEventListener(“keydown”, function(event) {
+if (event.key === “Escape”) {
+closeCollection();
+}
+});
+
+/* Make sure the popup starts closed */
+
+document.addEventListener(“DOMContentLoaded”, function() {
+closeCollection();
+});
